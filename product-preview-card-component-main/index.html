@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Product preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    *, html{
+      padding: 0;
+      margin: 0;
+    }
+
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    body{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: black;
+    }
+    .main{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: hsl(30, 38%, 92%);
+      margin: 20px;
+      width: 350px;
+      /* padding: 10px; */
+      font-family: Montserrat;
+      padding-top: 30px;
+      padding-bottom: 30px;
+      padding-left: 2px;
+      padding-right: 2px;
+    }
+    .white{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: hsl(0, 0%, 100%);
+      border-radius: 20px;
+      width: 300px;
+    }
+    .image1{
+      width: 300px;
+      height: 200px;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+    }
+    .main2{
+      display: flex;
+      flex-direction: column;
+      padding: 16px;
+      width: fit-content;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+      gap: 20px;
+      justify-content: center;
+    }
+    .span{
+      gap: 20px;
+      align-items: center;
+      color: hsl(228, 12%, 48%);
+      font-size: 14px;
+    }
+    .p{
+      font-size: 14px;
+      color: hsl(228, 12%, 48%);
+    }
+    .heading{
+      color: black;
+    }
+    .amount{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      gap: 20px;
+      align-self: flex-start;
+    }
+    .amount2{
+      color: hsl(158, 36%, 37%);
+    }
+    .cartlink{
+      color: white;
+      text-decoration: none;
+      align-items: center;
+      gap: 10px;
+      display: flex;
+    }
+    .button{
+      background-color: hsl(158, 36%, 37%);
+      padding: 10px;
+      border-radius: 10px;
+      border: 1px solid hsl(158, 36%, 37%);
+      align-items: center;
+      display: flex;
+      justify-content: center;
+
+    }
+    
+  </style>
+</head>
+<body>
+  
+  <div class="main">
+    
+    <div class="white">
+
+      <div class="main1">
+
+        <img src="./images/image-product-mobile.jpg" alt="" class="image1">
+      
+      </div>
+
+      <div class="main2">
+
+        <div class="span">
+
+          <span>P</span>
+          <span>E</span>
+          <span>R</span>
+          <span>F</span>
+          <span>U</span>
+          <span>M</span>
+          <span>E</span>
+        </div>
+
+        <div>
+
+          <h1 class="heading">Gabrielle Essence Eau De Parfum</h1>
+        </div>
+
+        <div>
+
+          <p class="p">A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of CHANEL.</p>
+        
+        </div>
+
+        <div class="amount"> 
+
+          <div>
+            <h1 class="amount2">$149.99</h1>
+          </div>
+
+          <div>
+            <p class="p"><s>169.99</s></p>
+          </div>
+        </div>
+
+        <button class="button"><a href="#" class="cartlink"><img src="./images/icon-cart.svg" alt=""><span>Add to cart</span></a></button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  
+  <div class="attribution">
+   Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Emokowb</a>.
+  </div>  
+</body>
+</html>
